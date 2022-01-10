@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>The CMAX Site</title>
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+
+        <h1>Chase Maxfield</h1>
+        <img class="w-50" src="img/chase_dj.jpg" />
+        <p>
+            I hope to get a lot out of this class. First, I hope to expand upon my web development skills and
+            understanding the frameworks that go behind ASP.NET. I believe that, after learning this and the Python/Django
+            framework, I'll be able to pick up any web development tools with relative ease. Second, I hope to improve my
+            general coding skills. Third, I hope to learn how to work in a group even better than I did last semester.
+        </p>
+        <h3>The top 3 jobs I am interested in pursuing upon graduation</h3>
+        <ol>
+            <li>Cybersecurity Consultant</li>
+            <li>Business Intelligence Developer</li>
+            <li>Software Engineer</li>
+        </ol>
+
+        <!-- We'll put our grade calculator in a nicely formatted table. -->
+        <h3>Grade Calculator</h3>
+        <form class="col w-50">
+            <div class="row">
+                <div class="col">
+                    <label>Assignments grade:</label>
+                </div>
+                <div class="col">
+                    <input id="a_grade" />
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <label>Group projects grade:</label>
+
+                </div>
+                <div class="col">
+                    <input id="g_grade" />
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <label>Quizzes grade:</label>
+                </div>
+                <div class="col">
+                    <input id="q_grade" /><br />
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <label>Exams grade:</label>
+                </div>
+                <div class="col">
+                    <input id="e_grade" /><br />
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <label>INTEX grade:</label>
+                </div>
+                <div class="col">
+                    <input id="i_grade" /><br />
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col w-100">
+                    <input id="calculate" class="w-50" type="button" value="Calculate!" />
+                </div>
+            </div>
+
+        </form>
+        <p id="final_grade">Your final grade is:</p>
+        <br />
+        <br />
+    </div>
+
+    <!-- Scripts for bootstrap and jquery to run properly on the website -->
+    <script src="lib/jquery/jquery-3.6.0.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.js"></script>
+
+    <!-- Script for calculating the final grade -->
+    <script src="js/main.js"></script>
+
+</body>
+</html>
