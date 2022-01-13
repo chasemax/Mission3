@@ -1,0 +1,71 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "CMAX Calculator";
+}
+@model Calculator_Entries
+
+<!-- We'll put our grade calculator in a nicely formatted table. -->
+<h3>Grade Calculator</h3>
+<form class="col w-50" method="post">
+    <div class="row">
+        <div class="col">
+            <label>Assignments grade:</label>
+        </div>
+        <div class="col">
+            <input id="a_grade" asp-for="a_grade" />
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <label>Group projects grade:</label>
+
+        </div>
+        <div class="col">
+            <input id="g_grade" asp-for="g_grade" />
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <label>Quizzes grade:</label>
+        </div>
+        <div class="col">
+            <input id="q_grade" asp-for="q_grade" /><br />
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <label>Exams grade:</label>
+        </div>
+        <div class="col">
+            <input id="e_grade" asp-for="e_grade" /><br />
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <label>INTEX grade:</label>
+        </div>
+        <div class="col">
+            <input id="i_grade" asp-for="i_grade" /><br />
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col w-100">
+            <input id="calculate" class="w-50" type="submit" value="Calculate!" />
+            <div asp-validation-summary="All"></div>
+        </div>
+    </div>
+
+</form>
+<p id="final_grade">Your final grade is:</p>
+<br />
+<br />
+
+<!-- Script for calculating the final grade -->
+<script src="~/js/main.js"></script>
